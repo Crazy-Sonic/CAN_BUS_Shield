@@ -131,7 +131,7 @@ class MCP_CAN {
         return MCP_N_TXBUFFERS - 1;    // read index of last tx buffer
     }
 
-    byte begin(byte speedset, const byte clockset = MCP_16MHz);     // init can
+    byte begin(byte speedset, const byte clockset = MCP_8MHz);     // init can
     byte init_Mask(byte num, byte ext, unsigned long ulData);       // init Masks
     byte init_Filt(byte num, byte ext, unsigned long ulData);       // init filters
     void setSleepWakeup(byte
